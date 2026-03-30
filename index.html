@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyAway | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="navbar">
+        <div class="left">
+        <img src="./image/flyaway3.png" class="logo">
+        
+    </div>
+        <ul class="nav-links">
+            
+            
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html" class="login-btn">Log in</a>
+        <a href="signup.html" class="signup-btn">Sign up</a>
+    </header>
+
+    
+    </header>
+       <div class="banner">
+        <h1>Discover Your Next Adventure</h1>
+        <p>Your dream destination is just one click away ✈</p>
+              
+        
+    </div>
+
+    
+    <section class="destination-section">
+        <h2>Top International Destinations</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="img-box img1"></div>
+                <h3>Paris</h3>
+                <p>City of lights, romance & unforgettable memories.</p>
+            </div>
+
+            <div class="card">
+                <div class="img-box img2"></div>
+                <h3>Dubai</h3>
+                <p>Experience luxury, skyscrapers & thrilling adventures.</p>
+            </div>
+
+            <div class="card">
+                <div class="img-box img3"></div>
+                <h3>Singapore</h3>
+                <p>A perfect blend of nature, nightlife & culture.</p>
+            </div>
+
+        </div>
+
+        <div class="dest"><h1>Looking for more amazing destinations?<br>Explore all places with just one click.</h1>
+        <a href="destinations.html"><button class="desti">DESTINATIONS</button></div></a>
+
+    </section>
+<div class="quote">
+        <h1>The world is full of beautiful destinations,</h1>
+<h1 > takes you there effortlessly,</h1>
+<h1 >Start your journey now.</h1>
+
+<p>Create an account to explore exclusive travel deals.<br>
+Already a member? Log in and continue your adventure.</p>
+
+    <div class="q1">
+        <a href="login.html" class="login">Log in</a>
+        <a href="signup.html" class="signup">Sign up</a>
+    </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 FlyAway Travel. All Rights Reserved.</p>
+    </footer>
+
+</body>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: black;
+    color: chartreuse;
+}
+
+
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid chartreuse;
+    position: sticky;
+    top: 0;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    
+}
+
+.nav-links a {
+    color: chartreuse;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 10px chartreuse;
+}
+
+.logo {
+    width: 200px;
+    height:80px;
+    padding-right: 100px;
+}
+.login-btn {
+    padding: 8px 18px;
+    border: 2px solid chartreuse;
+    color: chartreuse;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+    margin-right: -400px;
+}
+.signup-btn {
+    padding: 8px 18px;
+    border: 2px solid chartreuse;
+    color: chartreuse;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: chartreuse;
+    color: black;
+}
+.signup-btn:hover {
+    background: chartreuse;
+    color: black;
+}
+
+.banner {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+                        url("./image/3d-rendering-earth-banner.jpg") center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+            border-radius: 50px;
+            
+        }
+        .banner h1 {
+            font-size: 55px;
+            margin: 0;
+        }
+        .banner p {
+            font-size: 22px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background:chartreuse;
+            color: rgb(5, 5, 5);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background: #fdfefe;
+        }
+.btn {
+    padding: 12px 25px;
+    background: chartreuse;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px chartreuse;
+}
+
+
+.destination-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.destination-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 300px;
+    background: #111;
+    padding-bottom: 20px;
+    border: 2px solid chartreuse;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px chartreuse;
+}
+
+.img-box {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.img1 { background-image: url('./image/paris.jpg'); }
+.img2 { background-image: url('./image/dubai.webp'); }
+.img3 { background-image: url('./image/singa.webp'); }
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 25px;
+    border: 2px solid chartreuse;
+    color: chartreuse;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: chartreuse;
+    color: black;
+}
+
+.quote 
+             {
+    padding: 8px 18px;
+    border: 2px solid chartreuse;
+    color: white;
+    background-color: rgba(27, 52, 3, 0.866);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 55vh;
+    gap: 10px;
+    width: 100vh;
+    margin-left: 400px;
+
+}
+        .quote h1 {
+            font-size: 35px;
+        
+            display: flex;
+            
+        }
+        .quote p {
+            font-size: 20px;
+            display: flex;
+           
+        }
+
+        .dest{
+            margin-right: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+            border-radius: 50px;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        .dest h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        
+        .desti {
+            
+            display: inline-block;
+    margin-top: 25px;
+    padding: 10px 25px;
+    border: 2px solid chartreuse;
+    color: chartreuse;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+        }
+        .login {
+    padding: 8px 18px;
+    border: 2px solid chartreuse;
+    color: chartreuse;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+    
+}
+.signup{
+    padding: 8px 18px;
+    border: 2px solid chartreuse;
+    color: chartreuse;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.login:hover {
+    background: chartreuse;
+    color: black;
+}
+.signup:hover {
+    background: chartreuse;
+    color: black;
+}
+.q1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 10px;
+}
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid chartreuse;
+}
+
+</style>
+</html>

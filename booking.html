@@ -1,0 +1,220 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FlyAway | Booking</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+body {
+    background: black;
+    color: chartreuse;
+}
+
+
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid chartreuse;
+    position: sticky;
+    top: 0;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    
+}
+
+.nav-links a {
+    color: chartreuse;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 10px chartreuse;
+}
+
+.logo {
+    width: 200px;
+    height:80px;
+    padding-right: 100px;
+}
+
+
+.booking-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-box {
+    width: 850px;
+    background: #111;
+    border-radius: 20px;
+    padding: 40px;
+    border: 2px solid chartreuse;
+    box-shadow: 0 0 20px rgba(127,255,0,0.2);
+}
+
+.booking-box h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+
+.full {
+    grid-column: span 2;
+}
+
+
+.btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    background: chartreuse;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px chartreuse;
+}
+
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid chartreuse;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="navbar">
+    <div class="left">
+        <img src="./image/flyaway3.png" class="logo">
+  
+</div>
+        <ul class="nav-links">
+        
+            
+            <li><a href="gallery.html">Gallery</a></li>
+            
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+</div></div>
+
+<section class="booking-section">
+    <div class="booking-box">
+        <h1>Book Your Dream Trip ✈️</h1>
+
+        <div class="form-grid">
+
+            <input class="full" placeholder="Full Name">
+            <input class="full" placeholder="Email Address">
+
+            <select>
+                <option>From</option>
+                <option>Kolkata</option>
+                <option>Kochi</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+            </select>
+
+            <select>
+                <option>To Destination</option>
+                <option>Paris – City of Love & Lights</option>
+                <option>Dubai – Luxury & Adventure</option>
+                <option>Maldives – Islands & Beaches</option>
+                <option>New York – City That Never Sleeps</option>
+                <option>London – Royalty & Rain</option>
+                <option>Tokyo – Future & Tradition</option>
+                <option>Singapore – Clean & Green</option>
+                <option>Bali – Culture & Calm</option>
+                <option>Switzerland – Alps & Serenity</option>
+                <option>Thailand – Food & Festivals</option>
+                <option>Rome – History & Heritage</option>
+                <option>Sydney – Harbour & Harmony</option>
+                <option>Istanbul – Two Continents, One Soul</option>
+                <option>Santorini – White Walls & Blue Seas</option>
+                <option>Los Angeles – Stars & Sunshine</option>
+                <option>Hong Kong – Skyscrapers & Street Eats</option>
+                <option>Kerala – Backwaters & Bliss</option>
+                <option>Goa – Parties & Paradise</option>
+                <option>Seoul – K-Culture & Nightlife</option>
+                <option>Cairo – Pyramids & Pharaohs</option>
+            </select>
+
+            <input type="date">
+            <input type="number" placeholder="Number of Travelers">
+
+            <select>
+                <option>Travel Class</option>
+                <option>Economy</option>
+                <option>Premium Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+            </select>
+
+            <select>
+                <option>Hotel Type</option>
+                <option>Luxury Hotel ⭐⭐⭐⭐⭐</option>
+                <option>Comfort Hotel ⭐⭐⭐⭐</option>
+                <option>Budget Hotel ⭐⭐⭐</option>
+            </select>
+
+        </div>
+
+        <a href="payment.html">
+            <button class="btn">Proceed to Payment</button>
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    © 2025 FlyAway Travel. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+

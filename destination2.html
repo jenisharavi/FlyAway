@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FlyAway | Destinations</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+
+.navbar {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.navbar a {
+  padding: 8px 18px;
+  border: 2px solid chartreuse;
+  color: chartreuse;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: chartreuse;
+  color: black;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 90px 0 40px;
+  font-size: 60px;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 60px;
+}
+
+
+.card {
+  background: rgba(155, 220, 89, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+  border: 1px solid rgba(155, 220, 89, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(155, 220, 89, 0.25);
+}
+
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 22px;
+  color: chartreuse;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+
+.card a {
+  text-decoration: none;
+}
+
+.card button {
+  padding: 12px 26px;
+  background: chartreuse;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: white;
+}
+</style>
+</head>
+
+<body>
+
+
+<header class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</header>
+
+<h1>Explore Destinations</h1>
+
+<div class="cards">
+
+<div class="card">
+  <img src="./image/paris.webp">
+  <div class="card-content">
+    <h3>Paris</h3>
+    <p>City of love & lights.</p>
+    <a href="place1.html"><button>View Details</button></a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="./image/dubai.webp">
+  <div class="card-content">
+    <h3>Dubai</h3>
+    <p>Luxury & adventure.</p>
+    <a href="place2.html"><button>View Details</button></a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="./image/mal.webp">
+  <div class="card-content">
+    <h3>Maldives</h3>
+    <p>Island & beaches.</p>
+    <a href="place3.html"><button>View Details</button></a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="./image/ny.webp">
+  <div class="card-content">
+    <h3>New York</h3>
+    <p>City that never sleeps.</p>
+    <a href="place4.html"><button>View Details</button></a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="./image/london.webp">
+  <div class="card-content">
+    <h3>London</h3>
+    <p>Royalty & Rain.</p>
+    <a href="place5.html"><button>View Details</button></a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="./image/tokyo.webp">
+  <div class="card-content">
+    <h3>Tokyo</h3>
+    <p>Future & Tradition.</p>
+    <a href="place6.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+
+<div class="card">
+  <img src="./image/singa.webp" alt="Singapore">
+  <div class="card-content">
+    <h3>Singapore</h3>
+    <p>Clean & Green.</p>
+    <a href="place7.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/bali.webp" alt="Bali">
+  <div class="card-content">
+    <h3>Bali</h3>
+    <p>Culture & Calm.</p>
+    <a href="place8.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/switz.webp" alt="Switzerland">
+  <div class="card-content">
+    <h3>Switzerland</h3>
+    <p>Alps & Serenity.</p>
+    <a href="place9.html"><button>View Details</button></a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="./image/thai.webp" alt="Thailand">
+  <div class="card-content">
+    <h3>Thailand</h3>
+    <p>Food & Festivals.</p>
+    <a href="place10.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/rome.jpg" alt="Rome">
+  <div class="card-content">
+    <h3>Rome</h3>
+    <p>History & Heritage.</p>
+    <a href="place11.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/sydney.webp" alt="Sydney">
+  <div class="card-content">
+    <h3>Sydney</h3>
+    <p>Harbour & Harmony.</p>
+    <a href="place12.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/istan.jpg" alt="Istanbul">
+  <div class="card-content">
+    <h3>Istanbul</h3>
+    <p>Two continents, One soul.</p>
+    <a href="place13.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/santo.webp" alt="Santorini">
+  <div class="card-content">
+    <h3>Santorini</h3>
+    <p>White Walls & Blue Seas.</p>
+    <a href="place14.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/la.webp" alt="Los Angeles">
+  <div class="card-content">
+    <h3>Los Angeles</h3>
+    <p>Stars & Sunshine.</p>
+    <a href="place15.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/hk.webp" alt="Hong Kong">
+  <div class="card-content">
+    <h3>Hong Kong</h3>
+    <p>Skyscrapers & Street Eats.</p>
+    <a href="place16.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/kerala.webp" alt="Kerala">
+  <div class="card-content">
+    <h3>Kerala</h3>
+    <p>Backwaters & Bliss.</p>
+    <a href="place17.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/goa.webp" alt="Goa">
+  <div class="card-content">
+    <h3>Goa</h3>
+    <p>Parties & Paradise.</p>
+    <a href="place18.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/seoul.webp" alt="Seoul">
+  <div class="card-content">
+    <h3>Seoul</h3>
+    <p>K-Culture & Nightlife.</p>
+    <a href="place19.html"><button>View Details</button></a>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="./image/cairo.webp" alt="Cairo">
+  <div class="card-content">
+    <h3>Cairo</h3>
+    <p>Pyramids & Pharaohs.</p>
+    <a href="place20.html"><button>View Details</button></a>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
+

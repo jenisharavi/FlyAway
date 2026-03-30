@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FlyAway | Sign Up</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: chartreuse;
+}
+
+.a{
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+                        url("./image/top-view-camera-passport-frame.jpg") center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+            
+            
+        }
+.navbar {
+  width: 100%;
+  padding: 20px 60px;
+  
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.navbar a {
+  padding: 8px 18px;
+  border: 2px solid chartreuse;
+  color: chartreuse;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: chartreuse;
+  color: black;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.signup-box {
+  width: 420px;
+  background: rgba(155, 220, 89, 0.12);
+  padding: 35px;
+  border-radius: 25px;
+  text-align: center;
+  border: 2px solid chartreuse;
+  color: white;
+}
+
+.signup-box h2 {
+  margin-bottom: 25px;
+  color: chartreuse;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.btn {
+  width: 100%;
+  background: chartreuse;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: white;
+}
+
+.text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.text a {
+  color: chartreuse;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="a">
+<header class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+</header>
+
+
+<div class="container">
+  <div class="signup-box">
+    <h2>Create Your Account</h2>
+
+    <div class="input-box">
+      <input type="text" placeholder="Full Name">
+    </div>
+
+    <div class="input-box">
+      <input type="email" placeholder="Email Address">
+    </div>
+
+    <div class="input-box">
+      <input type="password" placeholder="Create Password">
+    </div>
+
+    <div class="input-box">
+      <input type="password" placeholder="Confirm Password">
+    </div>
+
+    <a href="destination2.html">
+      <button class="btn">Sign Up</button>
+    </a>
+
+    <div class="text">
+      Already have an account? <a href="login.html">Log In</a>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
+
