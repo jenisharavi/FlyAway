@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - FlyAway</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+.navbar {
+  width: 100%;
+  padding: 20px 60px;
+  background: black;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  border-bottom: 2px solid chartreuse;
+}
+
+.navbar a {
+  padding: 8px 18px;
+  border: 2px solid chartreuse;
+  color: chartreuse;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: chartreuse;
+  color: black;
+}
+
+
+.about-banner {
+    height: 65vh;
+    margin: 30px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1526772662000-3f88f10405ff") center/cover;
+
+    animation: fadeIn 1.2s ease;
+}
+
+.about-banner h1 {
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: chartreuse;
+}
+
+.about-banner p {
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+.section {
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    animation: fadeUp 1s;
+}
+
+.section h2 {
+    font-size: 40px;
+    color: chartreuse;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+
+.team-img img {
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 20px;
+    border: 2px solid chartreuse;
+    box-shadow: 0 0 20px chartreuse;
+}
+
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service {
+    background: rgba(170, 255, 70, 0.08);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid chartreuse;
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    background: rgba(170, 255, 70, 0.2);
+    box-shadow: 0 0 15px chartreuse;
+}
+
+.service h3 {
+    font-size: 25px;
+    color: chartreuse;
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    background: chartreuse;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(1.03); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+
+<header class="navbar">
+  <a href="index.html">Home</a>
+  <a href="gallary.html">Gallery</a>
+  <a href="contact.html">Contact Us</a>
+</header>
+
+
+<div class="about-banner">
+    <h1>About FlyAway</h1>
+    <p>Your trusted travel partner around the world</p>
+</div>
+
+<div class="section">
+    <h2>WHO WE ARE</h2>
+    <p>
+        FlyAway is a next-generation travel platform designed to make international 
+        travel simple, fast, and exciting. Whether it’s flights, hotels, holiday 
+        packages, or visa support — we bring everything in one place with premium quality
+        and unbeatable convenience.
+    </p>
+</div>
+
+<div class="section team-img">
+    <img src="https://images.unsplash.com/photo-1581093588401-22c96b3c6f9b" alt="office">
+</div>
+
+<div class="section">
+    <h2>OUR VISION</h2>
+    <p>
+        Our mission is to guide travelers with honest information, best pricing,  
+        expert support, and unforgettable experiences — making FlyAway a trusted global brand.
+    </p>
+</div>
+
+<div class="section">
+    <h2>WHAT WE DO FOR YOU</h2>
+    <p>
+        From flight bookings to luxury stays and budget travel options, we serve every 
+        type of traveler. Our team ensures secure booking, 24/7 customer assistance,  
+        and a smooth, personalized journey — every time.
+    </p>
+</div>
+
+<div class="section service-grid">
+    <div class="service">
+        <h3>✈ Airline Tickets</h3>
+        <p>Book flights at the best prices — fast, reliable, secure.</p>
+    </div>
+
+    <div class="service">
+        <h3>💬 24/7 Support</h3>
+        <p>Expert help anytime, anywhere during your travel.</p>
+    </div>
+
+    <div class="service">
+        <h3>🏝 Holiday Packages</h3>
+        <p>Choosing the perfect vacation is now easier than ever.</p>
+    </div>
+</div>
+
+<div class="footer">
+    © 2025 FlyAway Travel. All Rights Reserved.
+</div>
+
+</body>
+</html>
